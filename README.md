@@ -8,7 +8,7 @@ Dalam project ini saya ingin memberikan prediksi seberapa besar medical costs da
 ## Home Page
 Page ini bekerja untuk melakukan prediksi seberapa besar medical costs dalam setahun. Di sini user dapat menginput spesifikasi property yang dimiliki, seperti jumlah kamar tidur, kamar mandi, carspots, wilayah, umur rumah dll.
 
-![Home page](https://github.com/ridhoaryo/Purwadhika_JCDS07_FinalProject_Melbourne_Housing_Market/blob/master/home.jpg "Home Page")
+![Home page](https://github.com/serendia95/JCDS07_Final_Project/blob/master/png/home.png "Home Page")
 
 ## Prediction Result
 Berikut adalah contoh hasil prediksinya.
