@@ -36,7 +36,7 @@ Page ini akan menampilkan hasil dari prediksi.
 
 ![Prediction Result](https://github.com/serendia95/JCDS07_Final_Project/blob/master/png/predict_result.png "Prediction Result")
 
-### Visualization
+### Data Visualization
 Page ini akan menampilkan visualisasi dari data yang digunakan pada model prediksi.
 
 ![Data Visualization](https://github.com/serendia95/JCDS07_Final_Project/blob/master/png/visualization.png "Data Visualization")
