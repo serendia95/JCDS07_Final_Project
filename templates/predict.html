@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            background : url(https://pngimage.net/wp-content/uploads/2018/06/hospital-background-images-png-5.png);
+            background-size : 1280px 720px
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Predict | Yearly Medical Bills Prediction</title>
+</head>
+<style>
+h1{
+    color: rgb(255, 90, 95);
+    font-weight: bold;
+    font-family: 'Brown';
+    font-size: 53px;
+}
+img{
+    margin-top:20px;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:7080/">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:7080/predict">Prediction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:7080/visualization">Data Visualization</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+<center>
+    <br>
+    <br>
+    <form method="POST" action="http://localhost:7080/predict_result">
+        <p><b><font size="6">Your Personal Informations</font></b></p>
+        <div class="input-group mb-3" style="width: 500px">
+        <span class="input-group-text" style="width: 150px">Age:</span>
+            <input name="age" type="number" step="1" style="width: 350px" class="form-control" required=True/>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+        <span class="input-group-text" style="width: 150px">Gender:</span>    
+        <select name="sex" style="width: 350px" class="form-control" required="required">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option disabled selected hidden>Choose One</option>
+        </select>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+        <span class="input-group-text" style="width: 150px">Height (in cm):</span>
+            <input type="number" name="height" step="0.01" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+        <span class="input-group-text" style="width: 150px">Weight (in kg):</span>
+            <input type="number" name="weight" step="0.01" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+        <span class="input-group-text" style="width: 150px">No. of Children:</span>
+            <input type="number" name="children" step="1" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+        <span class="input-group-text" style="width: 150px">Smoking Habit:</span>    
+        <select name="smoking" style="width: 350px" class="form-control" required="required">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option disabled selected hidden>Choose One</option>
+        </select>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+        <span class="input-group-text" style="width: 150px">Region:</span>    
+        <select name="region" style="width: 350px" class="form-control" required="required">
+            <option value="Southwest">Southwest</option>
+            <option value="Southeast">Southeast</option>
+            <option value="Northwest">Northwest</option>
+            <option value="Northeast">Northeast</option>
+            <option disabled selected hidden>Choose One</option>
+        </select>
+        </div>
+        <button type="submit" name="submitation" style="background-color: rgb(4,122,133); color: whitesmoke"
+        class="btn btn-info">Predict My Yearly Medical Bill</button>
+    </form>
+</center>
+</body>
+</html>
