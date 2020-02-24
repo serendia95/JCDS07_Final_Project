@@ -18,11 +18,25 @@ Page ini sebagai tampilan awal webpage. Di sini user dapat memilih untuk melakuk
 ![Home page](https://github.com/serendia95/JCDS07_Final_Project/blob/master/png/home.png "Home Page")
 
 ### Predict
-Page ini bekerja untuk melakukan prediksi seberapa besar medical costs dalam setahun. Di sini user dapat menginput informasi tentang diri mereka, seperti umur, tinggi badan, berat badan, jumlah anak, perokok atau tidak, dan daerah mereka tinggal.
+Page ini bekerja untuk melakukan prediksi seberapa besar medical costs dalam setahun. Di sini user dapat menginput informasi tentang diri mereka, seperti umur, jenis kelamin, tinggi badan, berat badan, jumlah anak, perokok atau tidak, dan daerah mereka tinggal.
 
 ![Predict](https://github.com/serendia95/JCDS07_Final_Project/blob/master/png/predict.png "Predict")
+
+Pengguna aplikasi dapat memasukkan data sebagai berikut :
+- `Age` : umur user.
+- `Gender` : jenis kelamin user.
+- `Height (in cm)` : tinggi badan user (dalam cm).
+- `Weight (in kg)` : berat badan user (dalam kg).
+- `No. of Children` : jumlah anak user.
+- `Smoking Habit` : perokok atau tidaknya user.
+- `Region` : daerah tempat tinggal.
 
 ### Prediction Result
 Page ini akan menampilkan hasil dari prediksi.
 
 ![Prediction Result](https://github.com/serendia95/JCDS07_Final_Project/blob/master/png/predict_result.png "Prediction Result")
+
+### Visualization
+Page ini akan menampilkan visualisasi dari data yang digunakan pada model prediksi.
+
+![Data Visualization](https://github.com/serendia95/JCDS07_Final_Project/blob/master/png/visualization.png "Data Visualization")
